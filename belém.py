@@ -12,7 +12,7 @@ class PaBelemSpider(BaseGazetteSpider):
     name = "pa_belem"
     allowed_domains = ["sistemas.belem.pa.gov.br"]
     start_date = datetime.date(2005, 2, 1) #data inicial do diário oficial, pode ser alterado na chamada por terminal (regra de precedência do scrapy)
-    download_file_headers = {"Accept": "application/octet-stream"} #tipo de arquivo aceitado como download
+    download_file_headers = {"Accept": "application/octet-stream"} #tipo de arquivo aceitado como download, protocolo de correio no formato MIME.
 
     BASE_URL = "https://sistemas.belem.pa.gov.br/diario-consulta-api/diarios" #Nota, utiliza-se API no código.
 
