@@ -14,7 +14,7 @@ class PaBelemSpider(BaseGazetteSpider):
     start_date = datetime.date(2005, 2, 1) #data inicial do diário oficial, pode ser alterado na chamada por terminal (regra de precedência do scrapy)
     download_file_headers = {"Accept": "application/octet-stream"} #tipo de arquivo aceitado como download
 
-    BASE_URL = "https://sistemas.belem.pa.gov.br/diario-consulta-api/diarios"
+    BASE_URL = "https://sistemas.belem.pa.gov.br/diario-consulta-api/diarios" #Nota, utiliza-se API no código.
 
     def start_requests(self): 
         #strftime: converte a data e hora para string no formato definido (no caso, Ano-mês-diaThora) 
