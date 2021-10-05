@@ -55,7 +55,7 @@ class PaBelemSpider(BaseGazetteSpider):
 
             #manipula a url do download com os dados conseguidos pela API, assim permitindo o download direto.
             url = f"{self.BASE_URL}/{edition_number}"
-            #por fim o comando yield faz o download, passando as informações para a classe Gazette (locallizada em items.py)
+            #por fim o comando yield faz o download, passando as informações para a classe Gazette (localizada em items.py)
             yield Gazette(
                 date=gazette_date,
                 edition_number=edition_number,
