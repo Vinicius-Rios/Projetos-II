@@ -25,7 +25,7 @@ class RoPortoVelho(BaseGazetteSpider):
             ::-1
         ]
         for date in interval:
-            #requisição do scrapy para poder vasculhar a pagina com Selector
+            #requisição do scrapy para poder vasculhar a página com Selector
             yield Request(f"{self.BASE_URL}{date.year}/{date.month}")
 
     def parse(self, response):
